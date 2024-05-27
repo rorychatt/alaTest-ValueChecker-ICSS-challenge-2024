@@ -1,4 +1,5 @@
-from operator import Operator
+from typing import Dict
+from Operator import Operator
 from sample_data import price_lists
 
 def find_cheapest_operator(phone_number: str, operators: Dict[str, Operator]) -> str:
