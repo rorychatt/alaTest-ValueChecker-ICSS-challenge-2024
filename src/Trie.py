@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from trie_node import TrieNode
+from Trie_node import TrieNode
 
 @dataclass
 class Trie:

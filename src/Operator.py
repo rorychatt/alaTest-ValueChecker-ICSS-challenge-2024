@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from typing import Dict
-from trie import Trie
+from Trie import Trie
 
 @dataclass
 class Operator:
