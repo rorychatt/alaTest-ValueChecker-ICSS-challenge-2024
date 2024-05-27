@@ -1,5 +1,3 @@
-# sample_data.py
-
 price_lists = {
     'Operator A': {
         '1': 0.9,
