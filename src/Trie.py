@@ -16,11 +16,13 @@ class Trie:
     def search(self, phone_number: str) -> float:
         node = self.root
         current_price = float('inf')
-        for digit in phone_number:
+        longest_prefix_length = 0
+        for i, digit in enumerate(phone_number):
             if digit in node.children:
                 node = node.children[digit]
-                if node.price < current_price:
+                if node.price < float('inf'):
                     current_price = node.price
+                    longest_prefix_length = i + 1
             else:
                 break
-        return current_price
+        return current_price if longest_prefix_length > 0 else float('inf')
